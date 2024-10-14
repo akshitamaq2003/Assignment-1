@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshita Sharma</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Akshita Sharma</div>
+    <div class="dropdown">
+      <button class="dropdown-toggle"><img src="./assets/menu-regular-24.png" alt=""></button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile.png" alt="Profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello , I'm</p>
+      <h1 class="title">Akshita Sharma</h1>
+      <p class="section__text__p2">Full Stack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/akshita-sharma-873835249/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/akshita2003'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container" id="education-container"></div>
+      <div class="text-container">
+        <p id="about-text">Hello! I'm a passionate Web Developer committed to crafting responsive and engaging web applications. I specialize in creating intuitive interfaces that elevate user interactions. My goal is to blend creativity and functionality to deliver seamless digital experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skill Set</h1>
+    <div class="experience-details-container">
+      <div class="experience-containers">
+        <h2 class="experience-sub-title">Skills</h2>
+        <div class="skill-container" id="skills-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="slider">
+      <div class="slider-wrapper" id="projects-container"></div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:akshitasharma2903@gmail.com">akshitasharma2903@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/akshita-sharma-873835249/">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="https://img.icons8.com/?size=160&id=9L16NypUzu38&format=png" alt="LeetCode icon" class="icon contact-icon email-icon" />
+        <p><a href="https://leetcode.com/u/akshita2003/">Leetcode</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/experience.png" alt="Resume icon" class="icon contact-icon" />
+        <p><a href="./assets/resume.pdf">Resume</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>@Akshita Sharma</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
